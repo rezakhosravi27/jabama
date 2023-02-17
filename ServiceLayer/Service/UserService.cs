@@ -1,8 +1,10 @@
 ﻿using DomainLayer.Dto;
 using DomainLayer.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.IIS.Core;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using ServiceLayer.IService;
 using System;
@@ -84,6 +86,19 @@ namespace ServiceLayer.Service
             }
         }
 
+        public async Task<List<IdentityUser>> GetUsers()
+        {
+            try
+            {
+                var users = await _userManager.Users.ToListAsync();
+                return users; 
+            }
+            catch
+            {
+                throw; 
+            }
+        }
+
         public async Task<IdentityUser> GetUser(string Username)
         {
             
@@ -111,7 +126,6 @@ namespace ServiceLayer.Service
                     var message = new Message(new string[] { user.Email }, "Locked out account information", "Your account is lockout,Kindly wait for 10 minutes and try again");
                     _emailSender.SendEmail(message);
                     throw new GlobalException(HttpStatusCode.BadRequest, "The account is locked out for 3 minutes");
-
                 }
 
                 var isPasswordValid = await _userManager.CheckPasswordAsync(user, model.Password);
@@ -204,5 +218,24 @@ namespace ServiceLayer.Service
                 throw; 
             }
         }
+
+        public async Task<IdentityResult> DeleteUser(string id)
+        {
+            try
+            {
+                IdentityUser user = await _userManager.FindByIdAsync(id);
+                IdentityResult result = null; 
+                if (id != null)
+                {
+                    result = await _userManager.DeleteAsync(user); 
+                }
+                return result; 
+            }
+            catch
+            {
+                throw; 
+            }
+        }
+
     }
 }

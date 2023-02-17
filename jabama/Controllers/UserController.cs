@@ -90,7 +90,8 @@ namespace jabama.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("{username}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<IdentityUser>> GetUser(string Username)
         {
             try
@@ -109,8 +110,22 @@ namespace jabama.Controllers
             }
         }
 
-        [HttpPost("forgot-password")]
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> GetUsers()
+        {
+            try
+            {
+                var users = await _userService.GetUsers();
+                return Ok(new {length = users.Count, users});
+            }catch(Exception err)
+            {
+                return StatusCode(500, err.Message); 
+            }
+        }
        
+
+        [HttpPost("forgot-password")]
         public async Task<ActionResult> ForgotPassword(ForgotPassword model)
         {
             try
@@ -176,6 +191,28 @@ namespace jabama.Controllers
                 return Ok("user deActivated"); 
                 
                 
+            }catch(Exception err)
+            {
+                return StatusCode(500, err.Message); 
+            }
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> DeleteUser(string id)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(); 
+                }
+                var result = await _userService.DeleteUser(id);
+                if (!result.Succeeded)
+                {
+                    return BadRequest("user not deleted"); 
+                }
+                return Ok(new { message =  "User deleted" }); 
             }catch(Exception err)
             {
                 return StatusCode(500, err.Message); 
