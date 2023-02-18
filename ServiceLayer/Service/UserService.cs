@@ -208,7 +208,8 @@ namespace ServiceLayer.Service
                 var result = (IdentityResult)null; 
                 if(user != null)
                 {
-                    result = await _userManager.SetLockoutEnabledAsync(user, true); 
+                    await _signInManager.SignOutAsync(); 
+                    result = await _userManager.SetLockoutEnabledAsync(user, false); 
                 }
 
                 return result; 
@@ -229,6 +230,30 @@ namespace ServiceLayer.Service
                 {
                     result = await _userManager.DeleteAsync(user); 
                 }
+                return result; 
+            }
+            catch
+            {
+                throw; 
+            }
+        }
+
+        public async Task<IdentityResult> ChangePassword(ChangePassword model)
+        {
+            try
+            {
+                var user = await _userManager.FindByNameAsync(model.UserName);
+                var isPasswordValid = await _userManager.CheckPasswordAsync(user, model.OldPassword);
+                if (!isPasswordValid)
+                {
+                    throw new GlobalException(HttpStatusCode.BadRequest, "Password not correct"); 
+                }
+                IdentityResult result = null; 
+                if (isPasswordValid)
+                {
+                    result = await _userManager.ChangePasswordAsync(user, model.OldPassword, model.NewPassword); 
+                }
+
                 return result; 
             }
             catch

@@ -218,5 +218,30 @@ namespace jabama.Controllers
                 return StatusCode(500, err.Message); 
             }
         }
+
+
+        [HttpPost("change-password")]
+        public async Task<ActionResult> ChangePassword(ChangePassword model)
+        {
+            try
+            {
+                if(!ModelState.IsValid)
+                {
+                    return BadRequest(); 
+                }
+                IdentityResult result = await _userService.ChangePassword(model);
+
+                if (!result.Succeeded)
+                {
+                    return BadRequest("Password change failed, please check your data and try again"); 
+                }
+
+                return Ok(new { message = "Password changed" }); 
+                
+            }catch(Exception err)
+            {
+                return StatusCode(500, err.Message); 
+            }
+        }
     }
 }

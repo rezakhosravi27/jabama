@@ -36,13 +36,6 @@ namespace Microsoft.Extensions.DependencyInjection
 
             }).AddEntityFrameworkStores<DatabaseContext>().AddDefaultTokenProviders();
 
-            /*services.Configure<IdentityOptions>(options =>
-            {
-                options.Lockout.AllowedForNewUsers = true;
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
-                options.Lockout.MaxFailedAccessAttempts = 3;
-            }); */
-
             // Configuring Jwt Authentication
             services
             .AddAuthentication(options =>

@@ -300,11 +300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj",
+      "projectUniqueName": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj",
       "projectName": "DomainLayer",
-      "projectPath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj",
+      "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj",
       "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\obj\\",
+      "outputPath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",

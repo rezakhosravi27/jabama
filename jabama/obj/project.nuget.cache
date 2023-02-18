@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uuvrFeyb4VK+/SQcoOQmS0JHnrYLivwNlN1XBA5Ee9IVJ5wqeVQ2OBweKGeJXGZoFyQ1uITloVULjBrk+AEYGg==",
+  "dgSpecHash": "5to9qgRKI+gAOYwB48yLHYcxdQOHLHPuuZxskBTmXpMTXa7L3xbAlO/oRhJPLZbSULDhhxNm7CLFOS78U4uYDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\reza\\source\\repos\\jabama\\jabama.csproj",
+  "projectFilePath": "C:\\Users\\reza\\Desktop\\jabama\\jabama\\jabama.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reza\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\reza\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

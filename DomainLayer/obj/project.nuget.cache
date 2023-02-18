@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RI05PW7ZwvMcYlRnT+c92GoEfGcx+FL5p0S2pN0Vmji89ayUjwoEc5H2Bl4/fcXLzl1DZqF5jigQC5RmMgNtMw==",
+  "dgSpecHash": "YKdWLUg+D+HG+4YXnDuED43t279X1IfTTv22hjruupemNYUrTyNUhke8TvqfM8Xdpt5tYVvZcOZ4vp2fsfvfNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj",
+  "projectFilePath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reza\\.nuget\\packages\\mimekit\\3.5.0\\mimekit.3.5.0.nupkg.sha512",
     "C:\\Users\\reza\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KAPsmr0hEVLugQC/FjpDOHDumW55+qrQviW9VMeio8aHCt/7+m4o2IS0RarqOAhMPo0rVtqGlB5B5l8OXHH0WQ==",
+  "dgSpecHash": "KL/oWN16bX9vLF1iSz/IwvYKPb3pOASTJ5HaT1kq/Q0v+1mpMt8IefdP3725BhELaylUfp6KYyt9+/M1AqWkog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\reza\\source\\repos\\ServiceLayer\\ServiceLayer.csproj",
+  "projectFilePath": "C:\\Users\\reza\\Desktop\\jabama\\ServiceLayer\\ServiceLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reza\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\reza\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

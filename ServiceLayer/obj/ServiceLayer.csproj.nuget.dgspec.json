@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\reza\\source\\repos\\ServiceLayer\\ServiceLayer.csproj": {}
+    "C:\\Users\\reza\\Desktop\\jabama\\ServiceLayer\\ServiceLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj": {
+    "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj",
+        "projectUniqueName": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj",
         "projectName": "DomainLayer",
-        "projectPath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj",
+        "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj",
         "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\obj\\",
+        "outputPath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\reza\\source\\repos\\RepositoryLayer\\RepositoryLayer.csproj": {
+    "C:\\Users\\reza\\Desktop\\jabama\\RepositoryLayer\\RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\source\\repos\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectUniqueName": "C:\\Users\\reza\\Desktop\\jabama\\RepositoryLayer\\RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "C:\\Users\\reza\\source\\repos\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\RepositoryLayer\\RepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\source\\repos\\RepositoryLayer\\obj\\",
+        "outputPath": "C:\\Users\\reza\\Desktop\\jabama\\RepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj": {
-                "projectPath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj"
+              "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\reza\\source\\repos\\ServiceLayer\\ServiceLayer.csproj": {
+    "C:\\Users\\reza\\Desktop\\jabama\\ServiceLayer\\ServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reza\\source\\repos\\ServiceLayer\\ServiceLayer.csproj",
+        "projectUniqueName": "C:\\Users\\reza\\Desktop\\jabama\\ServiceLayer\\ServiceLayer.csproj",
         "projectName": "ServiceLayer",
-        "projectPath": "C:\\Users\\reza\\source\\repos\\ServiceLayer\\ServiceLayer.csproj",
+        "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\ServiceLayer\\ServiceLayer.csproj",
         "packagesPath": "C:\\Users\\reza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reza\\source\\repos\\ServiceLayer\\obj\\",
+        "outputPath": "C:\\Users\\reza\\Desktop\\jabama\\ServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,11 +168,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj": {
-                "projectPath": "C:\\Users\\reza\\source\\repos\\DomainLayer\\DomainLayer.csproj"
+              "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\DomainLayer\\DomainLayer.csproj"
               },
-              "C:\\Users\\reza\\source\\repos\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "C:\\Users\\reza\\source\\repos\\RepositoryLayer\\RepositoryLayer.csproj"
+              "C:\\Users\\reza\\Desktop\\jabama\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "C:\\Users\\reza\\Desktop\\jabama\\RepositoryLayer\\RepositoryLayer.csproj"
               }
             }
           }

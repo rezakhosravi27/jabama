@@ -20,6 +20,7 @@ namespace ServiceLayer.IService
         Task ForgotPassword(ForgotPassword model);
         Task<IdentityResult> ResetPassword(ResetPassword model);
         Task<IdentityResult> DeActiveUser(string username);
-        Task<IdentityResult> DeleteUser(string id); 
+        Task<IdentityResult> DeleteUser(string id);
+        Task<IdentityResult> ChangePassword(ChangePassword model); 
     }
 }
